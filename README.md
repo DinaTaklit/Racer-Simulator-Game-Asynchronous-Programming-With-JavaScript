@@ -1,5 +1,15 @@
 # Welcome to the One and only UdaciRacer Simulation Game
 
+## Project Overview
+
+We are creating a racing game called UdaciRacer Sim, which allows a user to race a simulated racer! This racing game runs as a Node application. Players will get to choose their racer and the track they want to race on. The strategy of the game is for each player to choose a pod racer they expect to win over a certain race track based on the pod’s characteristics (acceleration, handling, and top speed). A pre-built API will create the race selected by the players and return a stream of information lasting the duration of the race, resulting in a final ranking of racers.
+
+The goal of the project will be to use the provided starter project to build the web interface for:
+
+1. Creating Races (the selection of tracks and pod racers)
+2. Displaying the real-time race updates
+3. A final score/rankings view
+
 ## Project Introduction
 
 Here is a partially built-out game that races cars—your job is to complete it! Throughout the game logic, you will find _"TODO"_ comments that must be completed in order for the game to work. You are going to use the asynchronous skills you gained in the course to fill in the blanks in this game.
