@@ -1,7 +1,7 @@
 // PROVIDED CODE BELOW (LINES 1 - 80) DO NOT REMOVE
 
 // The store will hold all information needed globally
-var store = {
+const store = {
 	track_id: undefined,
 	player_id: undefined,
 	race_id: undefined,
@@ -35,7 +35,6 @@ async function onPageLoad() {
 function setupClickHandlers() {
 	document.addEventListener('click', function(event) {
 		const { target } = event
-
 		// Race track form field
 		if (target.matches('.card.track')) {
 			handleSelectTrack(target)
@@ -223,7 +222,6 @@ function renderTrackCards(tracks) {
 			<h4>Loading Tracks...</4>
 		`
 	}
-
 	const results = tracks.map(renderTrackCard).join('')
 
 	return `
@@ -341,7 +339,7 @@ function getTracks() {
 	return fetch(`${SERVER}/api/tracks`, {
 		...defaultFetchOpts()
 	})
-	.then(res => res.json)
+	.then(res => res.json())
 	.catch(error => console.log('getTracks', error))
 }
 
@@ -350,8 +348,8 @@ function getRacers() {
 	return fetch(`${SERVER}/api/cars`, {
 		...defaultFetchOpts()
 	})
-    .then((res) => res.json())
-    .catch((error) => console.log(error));
+    .then(res => res.json())
+    .catch(error => console.log(error));
 }
 
 function createRace(player_id, track_id) {
