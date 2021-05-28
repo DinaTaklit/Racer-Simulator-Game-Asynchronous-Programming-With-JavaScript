@@ -38,23 +38,16 @@ function setupClickHandlers() {
 		// Race track form field
 		if (target.matches('.card.track')) {
 			handleSelectTrack(target)
-		}
-
-		// Podracer form field
-		if (target.matches('.card.podracer')) {
+		}else if (target.matches('.card.podracer')) {
+			// Podracer form field
 			handleSelectPodRacer(target)
-		}
-
-		// Submit create race form
-		if (target.matches('#submit-create-race')) {
+		}else if (target.matches('#submit-create-race')) {
+			// Submit create race form
 			event.preventDefault()
-	
 			// start race
 			handleCreateRace()
-		}
-
-		// Handle acceleration click
-		if (target.matches('#gas-peddle')) {
+		}else if (target.matches('#gas-peddle')) {
+			// Handle acceleration click
 			handleAccelerate(target)
 		}
 
