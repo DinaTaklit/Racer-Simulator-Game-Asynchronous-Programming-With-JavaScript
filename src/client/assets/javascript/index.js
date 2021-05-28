@@ -188,6 +188,7 @@ function handleAccelerate() {
 // Provided code - do not remove
 
 function renderRacerCars(racers) {
+	console.log("renderRacerCars")
 	if (!racers.length) {
 		return `
 			<h4>Loading Racers...</4>
@@ -198,7 +199,7 @@ function renderRacerCars(racers) {
 
 	return `
 		<ul id="racers">
-			${reuslts}
+			${results}
 		</ul>
 	`
 }
@@ -349,7 +350,7 @@ function getRacers() {
 		...defaultFetchOpts()
 	})
     .then(res => res.json())
-    .catch(error => console.log(error));
+    .catch(error => console.log("getRacers", error));
 }
 
 function createRace(player_id, track_id) {
