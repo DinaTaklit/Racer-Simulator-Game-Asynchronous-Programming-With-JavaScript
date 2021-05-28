@@ -134,7 +134,7 @@ async function runCountdown() {
 			const countDown = setInterval(() => {
 				// run this DOM manipulation to decrement the countdown for the user
 				document.getElementById('big-numbers').innerHTML = --timer
-				
+
 				//if the countdown is done, clear the interval, resolve the promise, and return
 				if (timer === 0){
 					clearInterval(countDown);
@@ -159,7 +159,8 @@ function handleSelectPodRacer(target) {
 	// add class selected to current target
 	target.classList.add('selected')
 
-	// TODO - save the selected racer to the store
+	// save the selected racer to the store
+	store.player_id = parseInt(target.id);
 }
 
 function handleSelectTrack(target) {
