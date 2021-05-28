@@ -347,6 +347,11 @@ function getTracks() {
 
 function getRacers() {
 	// GET request to `${SERVER}/api/cars`
+	return fetch(`${SERVER}/api/cars`, {
+		...defaultFetchOpts()
+	})
+    .then((res) => res.json())
+    .catch((error) => console.log(error));
 }
 
 function createRace(player_id, track_id) {
