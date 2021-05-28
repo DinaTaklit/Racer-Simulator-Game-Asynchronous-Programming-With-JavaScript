@@ -338,9 +338,11 @@ function defaultFetchOpts() {
 
 function getTracks() {
 	// GET request to `${SERVER}/api/tracks`
-	return fetch(`${SERVER}/api/tracks`)
-		.then(res => res.json)
-		.catch(error => console.log('getTracks', error))
+	return fetch(`${SERVER}/api/tracks`, {
+		...defaultFetchOpts()
+	})
+	.then(res => res.json)
+	.catch(error => console.log('getTracks', error))
 }
 
 function getRacers() {
