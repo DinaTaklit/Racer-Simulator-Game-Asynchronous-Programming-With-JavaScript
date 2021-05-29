@@ -1,4 +1,4 @@
-# Welcome to the One and only UdaciRacer Simulation Game
+# Racer Simulator Game Asynchronous Programming With JavaScript
 
 ## Project Overview
 
@@ -51,13 +51,14 @@ To run the server, locate your operating system and run the associated command i
 Note that this process will use your terminal tab, so you will have to open a new tab and navigate back to the project root to start the front end.
 
 #### WINDOWS USERS -- Setting Environment Variables
+
 If you are using a windows machine:
+
 1. `cd` into the root of the project containing data.json 
 2. Run the following command to add the environment variable:
 ```set DATA_FILE=./data.json```
 
 If you still run into issues running the API server on your machine, you can run this project in the Udacity classroom.
-
 
 ### Start the Frontend
 
@@ -115,3 +116,7 @@ Accelerate a car
 - Returns nothing
 
 To complete the race logic, find all the TODO tags in index.js and read the instructions.
+
+## Credits
+
+All credits goes for udacity nanodegree [Learn Intermediate JavaScript](https://www.udacity.com/course/intermediate-javascript-nanodegree--nd032)
